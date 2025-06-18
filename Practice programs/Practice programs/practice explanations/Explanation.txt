@@ -1,0 +1,11 @@
+﻿1.Tricky part: Understanding post-increment.
+
+Answer: Output is 6, 5. b gets the value of a before increment.
+
+
+2.No. C# doesn’t allow re-declaration of variables in nested blocks with the same name in the same scope.
+
+
+3.Output is 2, not 2.5. a / 2 is integer division, so 2 is assigned to b
+
+4.False. "" is not equal to null, though some developers confuse the two.
