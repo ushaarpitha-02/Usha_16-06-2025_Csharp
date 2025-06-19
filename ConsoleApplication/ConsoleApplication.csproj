@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Strings</StartupObject>
+    <StartupObject>DatatypeConversions</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,8 @@
     <Compile Include="3.Datatypes.cs" />
     <Compile Include="4.VarandDynamic.cs" />
     <Compile Include="5.Strings.cs" />
+    <Compile Include="6.Operators.cs" />
+    <Compile Include="7.Datatypeconversions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

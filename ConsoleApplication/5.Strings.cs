@@ -98,7 +98,7 @@ class Strings
         string[] fruitsList = data.Split(',');
         Console.WriteLine(fruitsList);
 
-
+        
 
     }
 }
