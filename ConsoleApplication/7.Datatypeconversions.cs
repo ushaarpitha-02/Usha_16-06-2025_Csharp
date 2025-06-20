@@ -69,6 +69,28 @@ class DatatypeConversions
         {
             Console.WriteLine(num);
         }
+
+        string str = "123456";
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            Console.Write(str[i]);
+        }
+        Console.WriteLine();
+
+        int num1 = 10; //num1 directly stores the value 10
+        string digit = "Ten"; // digit directly stores the value "Ten"
+
+        int num2 = 20;
+        object obj = num2; // object is the refereence type that can hold any data type
+        Console.WriteLine("Object type: " + obj.GetType());
+
+        int num3 = (int)obj;
+        Console.WriteLine("Converted object back to int: " + num3);
+
+
+
+
+        
     }
 }
 

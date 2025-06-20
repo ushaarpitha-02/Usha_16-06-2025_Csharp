@@ -35,25 +35,25 @@ namespace Practice_programs
                 //Yes, it will print "True!" because the assignment `isTrue = true` evaluates to true, and the if condition is satisfied.
             }
 
-            Console.WriteLine("Count no of words in sentence");
-            Console.WriteLine("Enter a sentence :");
-            string CountWords = Console.ReadLine();
-            string[] splittedWords = CountWords.Split(' ');
-            int wordCount = splittedWords.Length;
-            Console.WriteLine("Number of words in the sentence:" + wordCount);
+            int x = 10;
+            int y = 20;
+            x = x + y;
+            y = x - y;
+            x = x - y;
+            Console.WriteLine($"x = {x}, y = {y}"); //20  10
 
 
-            Console.WriteLine("Enter a sentence");
-            string sentence = Console.ReadLine();
-            Console.WriteLine($"Length of the sentence is: {sentence.Length}");
+            int v = 7;
+            Console.WriteLine($"value of v is :" + v++);  
+            Console.WriteLine($"value of v is :" + ++v);// 7 9
 
-            string sentence1 = "software engineers are going to shine in the future";
-            Console.WriteLine(sentence1);
-            Console.WriteLine($"Length of the sentence1 is:{sentence1.Length}");
+            int u = 5;
+            bool result = !(u > 2 && u < 10);
+            Console.WriteLine(result);//false
 
-
-
+            
 
         }
+        
     }
 }
