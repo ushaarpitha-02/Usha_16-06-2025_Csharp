@@ -77,8 +77,10 @@ class DatatypeConversions
         }
         Console.WriteLine();
 
-        int num1 = 10; //num1 directly stores the value 10
-        string digit = "Ten"; // digit directly stores the value "Ten"
+        int num1 = 10;
+        Console.WriteLine(num1);//num1 directly stores the value 10
+        string digit = "Ten";
+        Console.WriteLine(digit);// digit directly stores the value "Ten"
 
         int num2 = 20;
         object obj = num2; // object is the refereence type that can hold any data type
