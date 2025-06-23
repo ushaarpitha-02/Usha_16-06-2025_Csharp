@@ -9,3 +9,16 @@ Answer: Output is 6, 5. b gets the value of a before increment.
 3.Output is 2, not 2.5. a / 2 is integer division, so 2 is assigned to b
 
 4.False. "" is not equal to null, though some developers confuse the two.
+
+
+
+Explanation: Length - 2 gives index 2 → nums[2] = 15
+
+Explanation: Only data[1] and data[3] are added → 4 + 8 = 12
+
+Explanation: a and b reference the same array.
+
+Explanation: Strings are immutable; ToUpper() returns a new string.
+
+Explanation: text[1] is 'b' (ASCII 98), text[2] is 'c' (ASCII 99); 98 + 99 = 197
+

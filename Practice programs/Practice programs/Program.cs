@@ -51,7 +51,40 @@ namespace Practice_programs
             bool result = !(u > 2 && u < 10);
             Console.WriteLine(result);//false
 
-            
+
+
+
+
+
+            int[] nums = { 5, 10, 15, 20 };
+            Console.WriteLine(nums[nums.Length - 2]);
+
+
+            int[] data = { 2, 4, 6, 8 };
+            int sum = 0;
+            for (int k = 1; k < data.Length; k+= 2)
+            {
+                sum += data[k];
+            }
+            Console.WriteLine(sum);
+
+
+            int[] i = { 1, 2, 3 };
+            int[] j = i;
+            j[0] = 99;
+            Console.WriteLine(i[0]);
+
+            string s1 = "hello";
+            string s2 = s1;
+            s2 = s2.ToUpper();
+            Console.WriteLine(s1);
+
+            string text = "abcdef";
+            Console.WriteLine(text[1] + text[2]);
+
+
+
+
 
         }
         
