@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConditionalStatements</StartupObject>
+    <StartupObject>Loops</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1.Basics.cs" />
+    <Compile Include="10.Looping.cs" />
     <Compile Include="2.Datatypes.cs" />
     <Compile Include="3.Datatypes.cs" />
     <Compile Include="4.VarandDynamic.cs" />

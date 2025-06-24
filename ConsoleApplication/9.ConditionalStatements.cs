@@ -3,6 +3,10 @@ class ConditionalStatements
 {
     static void Main()
     {
+        Console.WriteLine("Enter a number:");
+        int number = Convert.ToInt32(Console.ReadLine());
+        string result = (number > 0) ? "Number is positive." : "Number is non-positive.";
+
         string[] names = { "Usha", "Vinitha", "Arpitha", "Yeddula", "Vinni" };
         int namesLength = names.Length;
         Console.WriteLine(names);
@@ -20,9 +24,10 @@ class ConditionalStatements
         switchstatements();
         ifstatements();
         righttovote();
-
-
-
+        multiplication();
+        looping();
+        loops();
+        Profession();
     }
     static void Statements()
     {
@@ -178,6 +183,121 @@ class ConditionalStatements
             Console.WriteLine("You are not eligible to vote");
         }
     }
+    static void multiplication()
+    {
+        Console.WriteLine("Enter a number to print its multiplication table:");
+        int number = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{number} x {i} = {number * i}");
+        }
+        Console.WriteLine("Multiplication table completed.");
+
+    }
+    static void looping()
+    {
+        Console.WriteLine("Enter the name:");
+        string Name = Console.ReadLine();
+        switch (Name)
+        {
+            case "Usha":
+                Console.WriteLine("My name");
+                break;
+            case "Vinitha":
+                Console.WriteLine("My nick name");
+                break;
+            case "Arpitha":
+                Console.WriteLine("My last name");
+                break;
+            case "Yeddula":
+                Console.WriteLine("My sur name");
+                break;
+            case "Vinni":
+                Console.WriteLine("My sweet name");
+                break;
+            default:
+                Console.WriteLine("Name not found.");
+                break;
+
+        }
+        Console.WriteLine(Name + " is a valid name.");
+    }
+    static void loops()
+    {
+        Console.WriteLine("Enter  a student name:");
+        string studentName = Console.ReadLine();
+        Console.WriteLine("Enter the student marks:");
+        int marks = Convert.ToInt32(Console.ReadLine());
+        //int marks;
+        switch (studentName)
+        {
+            case "Usha":
+            case "Vinitha":
+            case "Arpitha":
+            case "Yeddula":
+            case "Vinni":
+            case "Teju":
+                if (marks >= 90)
+                {
+                    Console.WriteLine("Grade: A");
+                }
+                else if (marks >= 80)
+                {
+                    Console.WriteLine("Grade: B");
+                }
+                else if (marks >= 70)
+                {
+                    Console.WriteLine("Grade: C");
+                }
+                else if (marks >= 60)
+                {
+                    Console.WriteLine("Grade: D");
+                }
+                else
+                {
+                    Console.WriteLine("Grade: F");
+                }
+                break;
+            default:
+                Console.WriteLine("Student not found in the database.");
+                break;
+
+
+        }
+    }
+    static void Profession()
+    {
+        Console.WriteLine("Enter your profession:");
+        string profession = Console.ReadLine();
+        int salary=0;
+        
+        switch (profession)
+        {
+            case "doctor":
+
+                salary = 10000;
+                break;
+            case "engineer":
+                salary = 20000;
+                break;
+            case "teacher":
+                salary = 30000;
+                break;
+            case "artist":
+                salary = 40000;
+                break;
+            default:
+                Console.WriteLine("Profession not recognized.");
+                break;
+        }
+        Console.WriteLine($"The salary for the {profession} is: {salary}.");
+        
+    }
+    
+   
+
+   
+
 }
 
 
