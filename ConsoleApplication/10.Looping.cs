@@ -2,7 +2,10 @@
 class Loops
 {
     static void Main()
+
     {
+        
+
         Shopping();
         groceries();
         int number = 0;
@@ -129,6 +132,8 @@ class Loops
                 break;
         }
         Console.WriteLine("Amount paid!!! Thank you for shopping with us!");
+      
 
     }
+   
 }
