@@ -11,7 +11,7 @@ class SimpleCalculator
         while (Menu)
         {
             
-            Console.WriteLine("\n--- Simple Calculator ---");
+            Console.WriteLine("--- Simple Calculator ---");
             Console.WriteLine("1. Add");
             Console.WriteLine("2. Subtract");
             Console.WriteLine("3. Multiply");
