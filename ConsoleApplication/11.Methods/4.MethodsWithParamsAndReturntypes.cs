@@ -33,6 +33,11 @@ class MethodsWithParamsAndReturntypes
         string studentName = "Varun";
         int Id = 10;// Example name, in a real scenario this would be fetched from a database or other source
         Console.WriteLine($"Id is {Id} and Name is {studentName}");
-        return studentName; 
+        return studentName;
     }
+
+
+    
+    
+
 }
