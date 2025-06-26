@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SimpleCalculator</StartupObject>
+    <StartupObject>Methodswithparametersandreturntypes</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +52,7 @@
     <Compile Include="11.Methods\3.Methodwithparameters.cs" />
     <Compile Include="11.Methods\2.Methodswithreturntype.cs" />
     <Compile Include="11.Methods\4.MethodsWithParamsAndReturntypes.cs" />
+    <Compile Include="11.Methods\5.Methodswithparametersandreturntypes.cs" />
     <Compile Include="2.Datatypes.cs" />
     <Compile Include="3.Datatypes.cs" />
     <Compile Include="4.VarandDynamic.cs" />
