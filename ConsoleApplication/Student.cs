@@ -20,11 +20,12 @@ class StudentReport
         Console.WriteLine("Enter the Student's Marks in Computer Science:");
         int computerScienceMarks = Convert.ToInt32(Console.ReadLine());
 
-        if (mathMarks < 0 || scienceMarks < 0 || englishMarks < 0 ||
-           historyMarks < 0 || geographyMarks < 0 || computerScienceMarks < 0
-           &&
-           mathMarks > 100 || scienceMarks > 100 || englishMarks > 100 ||
-           historyMarks > 100 || geographyMarks > 100 || computerScienceMarks > 100)
+        if (mathMarks < 0 || mathMarks > 100 ||
+    scienceMarks < 0 || scienceMarks > 100 ||
+    englishMarks < 0 || englishMarks > 100 ||
+    historyMarks < 0 || historyMarks > 100 ||
+    geographyMarks < 0 || geographyMarks > 100 ||
+    computerScienceMarks < 0 || computerScienceMarks > 100)
         {
             Console.WriteLine("Error: Marks should be between 0 and 100.");
             return;//what is the use of return here

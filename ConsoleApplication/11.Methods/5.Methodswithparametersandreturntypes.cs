@@ -29,6 +29,7 @@ class Methodswithparametersandreturntypes
         Console.WriteLine("Number of fruits with more than 5 characters: " + fruitCount);
 
 
+        CalculateTotalPrice(98.9,3);
 
     }
     static string EmployeeName()
@@ -91,7 +92,11 @@ class Methodswithparametersandreturntypes
         }
         return count;
     }
-    
+    static void CalculateTotalPrice(double pricePerItem,int quantity)
+    {
+        double totalPrice = pricePerItem * quantity;
+        Console.WriteLine("Total Price: " + totalPrice);
+    }
 
 }
 
