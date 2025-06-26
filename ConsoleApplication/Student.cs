@@ -77,18 +77,18 @@ class StudentReport
         Console.WriteLine($"Average Marks: {averageMarks:F2}"); // Display average with 2 decimal places
         Console.WriteLine($"Grade: {grade}");
         Console.WriteLine("---------------------");
-        Console.Write("Do you want to enter another student? (yes/no): ");
-        string continueInput = Console.ReadLine().ToLower();
-        continueInput = Console.ReadLine().ToLower();
-
-     while (continueInput == "yes" || continueInput == "y");
+        
+        Console.WriteLine("Do you want to add another student? (yes/no)");
+        string response = Console.ReadLine().ToLower();
+        if (response == "yes" || response == "y")
         {
-            Main(); // Recursively call Main to re-enter student data
-            Console.WriteLine("\nThank you for using the Student Grade Processing System!");
-
+            Main(); // Recursively call Main to add another student
         }
-
-
+        else
+        {
+            Console.WriteLine("Exiting...");
+        }
+       
 
 
 
