@@ -3,6 +3,7 @@ class StudentReport
 {
     static void Main()
     {
+        
         Console.WriteLine("Enter the student's name:");
         string name = Console.ReadLine();
         Console.WriteLine("Enter the Student's Roll Number:");
@@ -81,6 +82,12 @@ class StudentReport
         
         Console.WriteLine("Do you want to add another student? (yes/no)");
         string response = Console.ReadLine().ToLower();
+        //while( response=="yes")
+        //{
+        //    Main(); // Recursively call Main to add another student
+        //    break; // Exit the loop after calling Main
+        //}
+        //Console.WriteLine("Exiting...");
         if (response == "yes" || response == "y")
         {
             Main(); // Recursively call Main to add another student
@@ -89,7 +96,7 @@ class StudentReport
         {
             Console.WriteLine("Exiting...");
         }
-       
+
 
 
 
